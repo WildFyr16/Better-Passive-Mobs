@@ -1,0 +1,10 @@
+{
+  "pack": {
+    "pack_format": 42,
+    "description": "Better Mobs 16x.\n§8Created by WildFyr",
+    "supported_formats": {
+      "min_inclusive": 37,
+      "max_inclusive": 100
+    }
+  }
+}

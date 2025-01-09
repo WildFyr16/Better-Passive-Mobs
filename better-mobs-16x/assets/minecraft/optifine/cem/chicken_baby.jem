@@ -1,0 +1,198 @@
+{
+	"credit": "WildFyr",
+	"textureSize": [32, 32],
+	"texture": "textures/entity/chicken/chick.png",
+	"models": [
+		{
+			"part": "head",
+			"id": "head",
+			"invertAxis": "xy",
+			"translate": [0, -9, 4],
+			"animations": [
+				{
+					"this.rx": 0,
+					"lwing.rz": "left_wing.rz",
+					"rwing.rz": "right_wing.rz",
+					"lleg.rx": "left_leg.rx",
+					"rleg.rx": "right_leg.rx"
+				}
+			]
+		},
+		{
+			"part": "bill",
+			"id": "bill",
+			"invertAxis": "xy",
+			"translate": [0, -9, 4]
+		},
+		{
+			"part": "chin",
+			"id": "chin",
+			"invertAxis": "xy",
+			"translate": [0, -9, 4]
+		},
+		{
+			"part": "body",
+			"id": "body",
+			"invertAxis": "xy",
+			"translate": [0, -8, 0],
+			"rotate": [-90, 0, 0],
+			"boxes": [
+				{"coordinates": [-2, 6, -6, 4, 5, 4], "textureOffset": [0, 0]}
+			],
+			"submodels": [
+				{
+					"id": "head2",
+					"invertAxis": "xy",
+					"translate": [0, 8, 0],
+					"rotate": [90, 0, 0],
+					"submodels": [
+						{
+							"id": "head_bone",
+							"invertAxis": "xy",
+							"translate": [0, -3, -3],
+							"boxes": [
+								{"coordinates": [-0.5, 0.5, -2, 1, 1, 1], "textureOffset": [8, 14]},
+								{"coordinates": [-1, 0, -1, 2, 3, 2], "textureOffset": [0, 9]}
+							]
+						}
+					]
+				},
+				{
+					"id": "wings",
+					"invertAxis": "xy",
+					"translate": [0, 8, 0],
+					"rotate": [90, 0, 0],
+					"submodels": [
+						{
+							"id": "lwing",
+							"invertAxis": "xy",
+							"translate": [-2, -2, 0],
+							"boxes": [
+								{"coordinates": [-1, -2, -2, 1, 2, 3], "textureOffset": [8, 9]}
+							]
+						},
+						{
+							"id": "rwing",
+							"invertAxis": "xy",
+							"translate": [2, -2, 0],
+							"boxes": [
+								{"coordinates": [0, -2, -2, 1, 2, 3], "textureOffset": [0, 14]}
+							]
+						}
+					]
+				},
+				{
+					"id": "legs",
+					"invertAxis": "xy",
+					"translate": [0, 8, 0],
+					"rotate": [90, 0, 0],
+					"submodels": [
+						{
+							"id": "lleg",
+							"invertAxis": "xy",
+							"translate": [-1, -6, 0.5],
+							"boxes": [
+								{
+									"coordinates": [0, -2, -0.5, 0, 2, 1],
+									"uvNorth": [0, 0, 0, 2],
+									"uvEast": [16, 4, 17, 6],
+									"uvSouth": [0, 0, 0, 2],
+									"uvWest": [16, 6, 17, 8],
+									"uvUp": [0, 1, 0, 0],
+									"uvDown": [0, 0, 0, 1]
+								},
+								{
+									"coordinates": [-0.5, -2, 0, 1, 2, 0],
+									"uvNorth": [8, 16, 9, 18],
+									"uvEast": [0, 0, 0, 2],
+									"uvSouth": [16, 8, 17, 10],
+									"uvWest": [0, 0, 0, 2],
+									"uvUp": [1, 0, 0, 0],
+									"uvDown": [1, 0, 0, 0]
+								},
+								{
+									"coordinates": [-1, -2, -1, 2, 0, 2],
+									"uvNorth": [0, 0, 2, 0],
+									"uvEast": [0, 0, 2, 0],
+									"uvSouth": [0, 0, 2, 0],
+									"uvWest": [0, 0, 2, 0],
+									"uvUp": [14, 16, 12, 14],
+									"uvDown": [16, 14, 14, 16]
+								}
+							]
+						},
+						{
+							"id": "rleg",
+							"invertAxis": "xy",
+							"translate": [1, -6, 0.5],
+							"boxes": [
+								{
+									"coordinates": [-1, -2, -1, 2, 0, 2],
+									"uvNorth": [0, 0, 2, 0],
+									"uvEast": [0, 0, 2, 0],
+									"uvSouth": [0, 0, 2, 0],
+									"uvWest": [0, 0, 2, 0],
+									"uvUp": [18, 2, 16, 0],
+									"uvDown": [18, 2, 16, 4]
+								},
+								{
+									"coordinates": [-0.5, -2, 0, 1, 2, 0],
+									"uvNorth": [9, 16, 10, 18],
+									"uvEast": [0, 0, 0, 2],
+									"uvSouth": [10, 16, 11, 18],
+									"uvWest": [0, 0, 0, 2],
+									"uvUp": [1, 0, 0, 0],
+									"uvDown": [1, 0, 0, 0]
+								},
+								{
+									"coordinates": [0, -2, -0.5, 0, 2, 1],
+									"uvNorth": [0, 0, 0, 2],
+									"uvEast": [16, 10, 17, 12],
+									"uvSouth": [0, 0, 0, 2],
+									"uvWest": [11, 16, 12, 18],
+									"uvUp": [0, 1, 0, 0],
+									"uvDown": [0, 0, 0, 1]
+								}
+							]
+						}
+					]
+				}
+			],
+			"animations": [
+				{
+					"this.rx": 0,
+					"lwing.rz": "left_wing.rz",
+					"rwing.rz": "right_wing.rz",
+					"lleg.rx": "left_leg.rx",
+					"rleg.rx": "right_leg.rx",
+					"head_bone.rx": "head.rx",
+					"head_bone.ry": "head.ry"
+				}
+			]
+		},
+		{
+			"part": "left_wing",
+			"id": "left_wing",
+			"invertAxis": "xy",
+			"translate": [4, -11, 0]
+		},
+		{
+			"part": "right_wing",
+			"id": "right_wing",
+			"invertAxis": "xy",
+			"translate": [-4, -11, 0]
+		},
+		{
+			"part": "left_leg",
+			"id": "left_leg",
+			"invertAxis": "xy",
+			"translate": [1, -5, -1]
+		},
+		{
+			"part": "right_leg",
+			"id": "right_leg",
+			"invertAxis": "xy",
+			"translate": [-2, -5, -1]
+		}
+	]
+}
